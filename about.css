@@ -1,0 +1,79 @@
+body, html {
+    height: 100%;
+background-color: black;
+color: #FF9900;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 24px;
+line-height: 25px;
+font-weight: bold;
+}
+
+.navflex{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 75%;
+    color: white;
+}
+
+
+article{
+    background-image: url(img/roachwood1c.png);
+    background-size: cover;
+}
+
+a:link, a:visited{
+    color: #499BAD;
+}
+
+.portrait{
+    display: none;
+}
+
+
+@media (min-width: 1240px){
+
+.logo{
+        text-align: center;
+        background-image: url(img/roachwood1d.png);
+        background-size: cover;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 75%;
+    color: white;
+}
+
+
+article{
+    background-image: none;
+    background-color: black;
+    background-size: cover;
+
+}
+
+.portrait{
+    background-image: url(img/jungle.jpg);
+    text-align: center;
+    vertical-align: center;
+    display: grid;
+    grid-template-rows: 1fr 550px 1fr;
+    grid-template-columns: 1fr 520px 1fr;   
+}
+
+.founder{
+    grid-row-start: 2;
+    grid-column-start: 2;
+    background-color: black;
+    border-style: solid;
+    border-color: #FFB547;
+    border-width: 10px;
+}
+
+}

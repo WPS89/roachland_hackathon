@@ -1,0 +1,83 @@
+body, html {
+    height: 100%;
+background-color: black;
+color: #FF9900;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 24px;
+line-height: 25px;
+font-weight: bold;
+}
+
+a:link, a:visited {
+    color: white;
+}
+
+.container1{
+    display: grid;
+    grid-template-rows: 3fr 1fr 1fr;
+    height: 40%;
+}
+
+.coverphoto{
+    background-image: url(img/roachleaf1b.jpg);
+    background-size: cover;
+    }
+    
+.logo{
+        margin-top: -120px;
+        text-align: center;
+}
+    
+.slogan{
+        margin-top: -25px;
+        text-align: center;
+}
+
+.navall{
+    height: 62%;
+    margin-top: -2%;
+    background-image: url(img/roachrock1c.jpg);
+    background-size: cover;
+}
+    
+.navflex{
+        color: white;
+        display: flex;
+        justify-content: space-around;
+}
+
+.navflex2{
+    display: none;
+}
+    
+    .yearpass{
+        margin-top: -200px;
+        text-align: right;
+}
+
+
+
+@media (min-width: 1240px){
+
+.coverphoto{
+background-image: url(img/roachrock1d.jpg);
+background-size: cover;
+}
+
+.navall{
+    height: 62%;
+    margin-top: -2%;
+    background-image: url(img/jungle.jpg);
+    background-size: cover;
+}
+
+.navflex{
+    display: none;
+}
+
+.navflex2{
+    display: flex;
+    justify-content: space-around;
+}
+
+}
